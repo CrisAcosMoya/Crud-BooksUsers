@@ -1,0 +1,26 @@
+:host {
+  display: block;
+}
+
+mat-dialog-container {
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}

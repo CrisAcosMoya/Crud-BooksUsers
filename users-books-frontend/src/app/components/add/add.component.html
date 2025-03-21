@@ -1,0 +1,32 @@
+<div class="add-wrapper">
+  <h1 class="form-title">Add Book</h1>
+  <form [formGroup]="bookForm" (ngSubmit)="onSave()">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="titulo" placeholder="Enter the title">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Author</mat-label>
+      <input matInput formControlName="autor" placeholder="Enter the author">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Gender</mat-label>
+      <input matInput formControlName="genero" placeholder="Enter the gender">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Availability</mat-label>
+      <mat-select formControlName="disponibilidad">
+        <mat-option [value]="true">Available</mat-option>
+        <mat-option [value]="false">Not available</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="button-group">
+      <button mat-raised-button color="primary" type="submit">Save</button>
+      <button mat-raised-button color="warn" type="button" (click)="onCancel()">Cancel</button>
+    </div>
+  </form>
+</div>

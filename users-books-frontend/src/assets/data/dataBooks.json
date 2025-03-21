@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "id": "e344",
+      "titulo": "Almas errantes",
+      "autor": "Isabel Castro",
+      "genero": "Fantástico",
+      "disponibilidad": true
+    },
+    {
+      "id": "i342",
+      "titulo": "La sombra del pasado",
+      "autor": "Andrés Martínez",
+      "genero": "Misterio",
+      "disponibilidad": false
+    },
+    {
+      "id": "eef3",
+      "titulo": "El último suspiro",
+      "autor": "Sofía Navarro",
+      "genero": "Terror",
+      "disponibilidad": true
+    },
+    {
+      "id": "dc23",
+      "titulo": "Cielos de esperanza",
+      "autor": "Diego Morales",
+      "genero": "Inspirador",
+      "disponibilidad": true
+    }
+  ]
+}

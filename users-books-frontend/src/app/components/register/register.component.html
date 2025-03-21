@@ -1,0 +1,38 @@
+<div class="register-wrapper">
+  <h2>Register</h2>
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <mat-form-field appearance="outline">
+      <mat-label>Name complete</mat-label>
+      <input matInput formControlName="fullName" placeholder="Enter your full name">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" placeholder="Enter your email">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Loan Date</mat-label>
+      <input matInput formControlName="loanDate" type="date">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Return Date</mat-label>
+      <input matInput formControlName="returnDate" type="date">
+    </mat-form-field>
+
+    <mat-checkbox formControlName="acceptRules">
+      I accept the rules and restrictions
+    </mat-checkbox>
+
+    <div class="button-group">
+      <button mat-raised-button color="primary" type="submit" [disabled]="registerForm.invalid">
+        Send
+      </button>
+    </div>
+  </form>
+</div>
+
+<div class="loader-overlay" *ngIf="loading">
+  <mat-progress-spinner mode="indeterminate" diameter="80"></mat-progress-spinner>
+</div>
